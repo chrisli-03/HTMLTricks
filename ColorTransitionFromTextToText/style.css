@@ -1,0 +1,21 @@
+.test {
+	position: relative;
+}
+.test::before {
+	content: "TESTESTEST";
+	position: absolute;
+	width: 0px;
+	overflow: hidden;
+	color: tomato;
+	transition: width 0.5s ease, text-indent 0.5s ease;
+}
+.test.reverse::before {
+	right: 0;
+	text-indent: -100%;
+}
+.test.expand::before {
+	width: 100%;
+}
+.test.reverse.expand::before {
+	text-indent: 0;
+}
