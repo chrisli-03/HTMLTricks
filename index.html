@@ -3,6 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		.test {
+			position: relative;
+		}
+		.test::before {
+			content: "TESTESTEST";
+			position: absolute;
+			width: 0px;
+			overflow: hidden;
+			color: tomato;
+			transition: width 0.5s ease, text-indent 0.5s ease;
+		}
+		.test.reverse::before {
+			right: 0;
+			text-indent: -100%;
+		}
+		.test.expand::before {
+			width: 100%;
+		}
+		.test.reverse.expand::before {
+			text-indent: 0;
+		}
+	</style>
+	<script>
+		function toggle() {
+			let text = document.querySelector('#text1');
+			if (text.className === 'test' || text.className === 'test reverse') text.className += ' expand'
+			else text.className = text.className.replace(' expand', '')
+
+			text = document.querySelector('#text2');
+			if (text.className === 'test') text.className += ' expand'
+			else text.className = text.className.replace(' expand', '')
+		}
+	</script>
 </head>
 <body>
 	<div id="text1" class="test expand reverse" style="display: inline-block;">
