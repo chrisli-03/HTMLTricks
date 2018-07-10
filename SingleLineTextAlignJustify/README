@@ -1,3 +1,2 @@
-It's a simple idea, since text align justify only works when text wraps, just add a after with width 100%(so its on next line)
-to trigger the effect.
+It's a simple idea, since text align justify only works when text wraps, just add a after with width 100%(so its on next line) to trigger the effect.
 OR just use text-align-last: justify which does the samething!
