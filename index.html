@@ -25,6 +25,18 @@
 		.test.reverse.expand::before {
 			text-indent: 0;
 		}
+
+		.justify {
+			height: 24px;
+			width: 300px;
+			line-height: 24px;
+			text-align: justify;
+		}
+		.justify::after {
+			content: "";
+			width: 100%;
+			display: inline-block;
+		}
 	</style>
 	<script>
 		function toggle() {
@@ -39,6 +51,7 @@
 	</script>
 </head>
 <body>
+	<span>Color Transition</span>
 	<div id="text1" class="test expand reverse" style="display: inline-block;">
 		<span>TESTESTEST</span>
 	</div>
@@ -46,5 +59,8 @@
 		<span>TESTESTEST</span>
 	</div>
 	<div style="height: 30px; width: 100px; user-select: none;" onclick="toggle()">Click ME</div>
+	<span>SingleLine Text Align Justify</span>
+	<div class="justify">TEST TEST TEST TEST</div>
+	<div style="width: 300px">This line is not Justified</div>
 </body>
 </html>
