@@ -1,0 +1,34 @@
+section {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+section div {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	padding: 0 20px;
+	position: relative;
+}
+
+section div:nth-last-child(9) ~ div{
+	height: 0;
+	width: 140px;
+}
+
+section div::after {
+	content: '';
+	position: absolute;
+	border-right: 1px solid red;
+	left: 100%;
+	display: block;
+	height: 100%;
+}
+
+section div:nth-last-child(9)::after {
+	border: none;
+}
+
+section div p { width: 140px; }
