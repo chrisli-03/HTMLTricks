@@ -1,0 +1,7 @@
+Originally saw this on stackoverflow
+The problem is to use flexbox to create a table like layout, but the most right element doesn't have a border
+
+My solution is to use pseudo element ::after to place the border, and push the most right one off screen
+But there is a problem with the last row, the width is messed up
+I solved it by adding multiple empty divs with height 0 to push a new row, so this row is no longer the last row
+Example here https://hechengli.github.io/HTMLTricks/FlexBoxMostRightNoBorder/
