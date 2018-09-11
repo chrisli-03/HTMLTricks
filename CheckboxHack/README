@@ -2,4 +2,4 @@ I didnt comeup with this method, but its a neat method.
 The idea is to link label's for attribute and a checkbox's id to link them together,
 then use :checked with sibling selector ~ and + to change label/(or other element)'s style).
 This is a very handy way to create customized checkbox
-Example here https://hechengli.github.io/HTMLTricks/CheckboxHack/
+Example here: https://hechengli.github.io/HTMLTricks/CheckboxHack/
