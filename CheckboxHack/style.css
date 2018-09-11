@@ -1,0 +1,24 @@
+.check {
+	display: inline-block;
+	background-color: red;
+	height: 30px;
+	width: 30px;
+}
+.text {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 5px;
+	vertical-align: top;
+}
+input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"]:checked + label {
+	background-color: black;
+}
+input[type="checkbox"]:checked ~ .text {
+	background-color: #0f0;
+	color: white;
+	text-decoration: line-through;
+}
