@@ -1,0 +1,6 @@
+This method is awesome<br>
+The idea behind it is using a pseudo element with a transparent background, and a huge border/box-shadow<br>
+The border/box-shadow spans the entire div while keeping pseudo element transparent<br>
+Then add overflow: hidden to remove any excess color<br>
+
+See effect here: https://hechengli.github.io/HTMLTricks/HoleInElement/
